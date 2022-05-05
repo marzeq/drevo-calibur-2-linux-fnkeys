@@ -9,7 +9,7 @@ then
   sudo mkinitcpio -P
 elif command -v update-initramfs &> /dev/null
 then
-  sudo update-initramfs
+  sudo update-initramfs -u
 else
   echo "Could not find mkinitcpio or update-initramfs. Please a find an alternative for your distribution."
 fi
