@@ -2,4 +2,4 @@
 
 Run `./fix.sh` to fix!
 
-(Distro with mkinitpcio or update-initramfs required.)
+(Distro with mkinitpcio, update-initramfs or dracut required.)
