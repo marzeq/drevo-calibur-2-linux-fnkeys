@@ -10,6 +10,9 @@ then
 elif command -v update-initramfs &> /dev/null
 then
   sudo update-initramfs -u
+elif command -v dracut &> /dev/null
+then
+  sudo dracut --regenerate-all --force
 else
   echo "Could not find mkinitcpio or update-initramfs. Please a find an alternative for your distribution."
 fi
